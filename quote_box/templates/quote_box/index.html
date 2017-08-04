@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<p>
+    Access api to generate random quote via 
+    <blockquote>
+      <code> https://af-quotes-api.herokuapp.com/api/quotes/random/</code> 
+    </blockquote>
+</p>
+
+<p>
+    <h3> JSON response sample</h3>
+    <code><pre>
+    { 
+        "id":     160,
+        "quote":  "There are many colorful flowers on the path of life, 
+                   but the prettiest have the sharpest thorns. ",
+        "source": "African Proverb"
+    }
+    </pre>
+
+    </code>
+</p>
+
+{% endblock %}

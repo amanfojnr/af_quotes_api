@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    background: white;
+    font-family: 'Raleway', sans-serif; 
+}
+
+.jumbotron {
+    background: #A42A15;
+    color: white;
+}
