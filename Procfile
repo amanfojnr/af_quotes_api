@@ -1,1 +1,1 @@
-web: gunicorn mysite.wsgi
+web: gunicorn af_quotes_api.wsgi
