@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <p>
-    Access api to generate random quote via 
+    <h2>Access api to generate random quote via</h2> 
     <blockquote>
       <code> https://af-quotes-api.herokuapp.com/api/quotes/random/</code> 
     </blockquote>
@@ -16,6 +16,50 @@
                    but the prettiest have the sharpest thorns. ",
         "source": "African Proverb"
     }
+    </pre>
+
+    </code>
+</p>
+
+<hr>
+<p>
+    <h2>Access api to generate a number of quotes using a limit parameter</h2>
+    <blockquote>
+      <code> https://af-quotes-api.herokuapp.com/api/quotes/list/&lt;limit&gt;</code> 
+    </blockquote>
+    Where <code>limit</code> is an integer. if  <code>limit</code> exceeds the number of quotes in the database,
+    the api responds with all quotes.
+    <br>
+    You can also get a list of all quotes in the database with
+     <blockquote>
+      <code> https://af-quotes-api.herokuapp.com/api/quotes/list</code> 
+    </blockquote>
+</p>
+
+<p>
+    <h3> JSON response sample</h3>
+    <code>
+        <pre>
+       [
+           { 
+             "id":      1,
+             "quote":   "Wisdom is wealth. ",
+             "source":  "Swahili"
+           },
+
+           { 
+             "id":      2,
+             "quote":     "A Wisdom is like a baobab tree; no one individual can embrace it. ",
+             "source":  " Akan proverb"
+           },
+
+           {
+             "id":       3,
+             "quote":    "A The fool speaks, the wise man listens. ",
+             "source":   "Ethiopian proverb"
+           }
+           ...
+       ]
     </pre>
 
     </code>

@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="decription" content="Over 200 quotes from Mama Africa, An api for serving african quotes">
+    <meta name="keywords" content="api">
+    <meta name="author" content="amanfojnr">
+    <meta property="og:title" content="af-quotes-api" />
+    <meta property="og:url" content="af-quotes-api.herokuapp.com" />
+    <meta property="og:image" content="https://s2.postimg.org/yeztxc0ux/afquoteapi.jpg" />
     <title>{% block title %} {% endblock %}</title>
 
     <!-- Bootstrap -->
@@ -20,10 +25,24 @@
     <![endif]-->
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+     <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">AF-QUOTES-API</a>
+    </div>
+  </div>
+</nav>
            <div class="jumbotron">
         <div class="container">
-             <h1>af-quotes-api</h1>
-             <p>an api for serving african quotes</p>
+             <h1>Over 200 quotes from Mama Africa</h1>
+             <p>An api for serving african quotes</p>
         </div> 
     </div>
     <div class="container">
@@ -35,7 +54,18 @@
       </div>
  
     </div>
-   
+    
+    <div class="container">
+      <div class="row">
+        <footer>
+        <p class="text-center">
+     <strong >Fork and Contribute on <a href="https://github.com/amanfojnr/af_quotes_api">Github</a></strong>
+        </p>
+    </footer>
+      </div>
+      
+    </div>
+    
    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
