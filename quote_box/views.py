@@ -9,12 +9,19 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-class QuoteListView(generics.ListAPIView):
+def quote_list(request, limit=263):
     """
-    API endpoint that generate quotes all quotes
+    API endpoint that lists all quotes or a specific number of
+    quotes
+
+    limit --  the number of quotes to be returned
     """
-    queryset = Quote.objects.order_by('pk')
-    serializer_class = QuoteSerializer
+    quotes = Quote.objects.all()[:int(limit)]
+    serializer = QuoteSerializer(quotes, many=True)
+    response = HttpResponse(JSONRenderer().render(serializer.data),
+                            content_type='application/json')
+    response["Access-Control-Allow-Origin"] = "*"
+    return response
 
 
 def random_quote_detail(request):
