@@ -3,12 +3,9 @@
 body {
     background: white;
     font-family: 'Raleway', sans-serif; 
-    width: 100%;
 }
 
 .jumbotron {
     background: #A42A15;
     color: white;
-    background-image: url("https://s2.postimg.org/yeztxc0ux/afquoteapi.jpg");
-    min-height: 350px;
 }
