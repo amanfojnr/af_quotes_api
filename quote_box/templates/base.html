@@ -11,6 +11,7 @@
     <meta property="og:title" content="af-quotes-api" />
     <meta property="og:url" content="af-quotes-api.herokuapp.com" />
     <meta property="og:image" content="https://s2.postimg.org/yeztxc0ux/afquoteapi.jpg" />
+    <meta property="og:description" content="Over 200 quotes from Mama Africa, An API for serving African quotes" />
     <title>{% block title %} {% endblock %}</title>
 
     <!-- Bootstrap -->
@@ -25,7 +26,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
   <div class="container">
      <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -41,15 +42,18 @@
 </nav>
            <div class="jumbotron">
         <div class="container">
-             <h1>Over 200 quotes from Mama Africa</h1>
-             <p>An api for serving african quotes</p>
+             <h1>Over 200 quotes from Mama Africa.</h1>
+             <p>An API for serving African quotes.</p>
         </div> 
     </div>
     <div class="container">
       <div class="row">
-      {% block content %}
+          <div class="col-xs-12">
+             {% block content %}
 
     {% endblock %}
+          </div>
+     
         </div>
       </div>
  

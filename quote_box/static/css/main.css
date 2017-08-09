@@ -3,7 +3,6 @@
 body {
     background: white;
     font-family: 'Raleway', sans-serif; 
-    width: 100%;
 }
 
 .jumbotron {
@@ -11,4 +10,16 @@ body {
     color: white;
     background-image: url("https://s2.postimg.org/yeztxc0ux/afquoteapi.jpg");
     min-height: 350px;
+}
+
+.jumbotron h1 {
+  padding-top: 50px;
+}
+
+.jumbotron p {
+    font-size: 2.8em;
+}
+
+blockquote {
+    padding: 0 20px;
 }
