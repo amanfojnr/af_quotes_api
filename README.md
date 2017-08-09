@@ -1,6 +1,6 @@
 # African quotes api
 
-Visit [website for API Documentation/How-To]("https://af-quotes-api.herokuapp.com/")
+Visit [website for API Documentation/How-To](https://af-quotes-api.herokuapp.com/)
 
 ## How to Contribute
 
